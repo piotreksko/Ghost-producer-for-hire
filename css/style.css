@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 /*--- Nav Font --*/
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway');
-/*--- Heading Font --*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+/*--- Main title font --*/
 
 html, body {
   margin: 0;
@@ -11,26 +11,64 @@ html, body {
   width: 100%;
 }
 
+h1 {
+  font-family: 'Kaushan Script', serif;
+  font-size: 300%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 2%;
+  text-shadow: 0px 0px 250px #000;
+}
+
+#about h2, .contact h2, #demo h2 {
+  color: #2c2c2c;
+}
+
+.text-primary {
+  color: #fed136;
+}
+
+#mainNav .navbar-brand {
+  color: #fed136;
+  font-family: 'Kaushan Script', serif, cursive;
+}
+
+.container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 200%;
   font-weight: 700;
-  color: #2c2c2c;
+  color: #fff;
   text-align: center;
   text-decoration: underline;
+  padding-top: 4%;
+  text-decoration: none;
+}
+
+h3 {
+  color: #fff;
+  padding-top: 4%;
 }
 
 p {
-  font-family: "Raleway", serif;
-  color: #2C2C2C;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
   font-size: 140%;
   line-height: 180%;
   font-weight: 800;
+  margin-bottom: 0;
+  text-align: justify;
 }
 
 img {
   text-align: center;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   width: auto;
 }
@@ -41,42 +79,31 @@ img {
   margin: auto;
   background: url("../img/producer3.jpg") no-repeat 50% 50%;
   filter: alpha(opacity=30);
-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=900);
--moz-opacity: 0.9;
-opacity: 0.9;
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=900);
+  -moz-opacity: 0.9;
+  opacity: 0.9;
   background-size: cover;
   display: table;
   top: 0;
 }
 
-.intro .inner {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  max-width: none;
-}
-
 .content {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 300%;
-  font-weight: 700;
-  color: #FFF;
-  text-align: center;
-  padding: 2%;
-  text-shadow: 0px 0px 250px #000;
 }
 
 .content p {
   color: #FFF;
+  position: relative;
+  right: 25%;
+  padding-top: 5%;
 }
 
 .inner {
-  max-width: 600px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
   margin: auto;
   font-size: 120%;
   line-height: 1.6;
@@ -85,14 +112,13 @@ h1 {
 
 /* Navigation menu */
 
-nav.navbar{
-  background-color:#ccc;
-   // Animation
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.3s ease;
+nav.navbar {
+  background-color: #ccc; // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
-navbar{
+.navbar {
   background-color: #666;
   height: 80px;
 }
@@ -103,56 +129,60 @@ nav a:hover {
 }
 
 .navbar.compressed {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  height: 50px;
   background: #6dcc7c;
   color: #6dcc7c;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-
 /*-- End navigation menu --*/
 
-.left-col {
-  width: 60%;
-  float: left;
-  margin: 4% 0 4% 4%;
-}
-
-.sidebar {
+.sidepic {
   width: 26%;
-  float: left;
+  float: right;
   margin: 4%;
 }
 
-.contact p{
+.contact p {
   text-align: center;
-  letter-spacing: 4px;
+  color: #212529;
 }
 
-.contact a{
+.contact a {
   color: #2C2C2C;
 }
 
 .clearfix {
-  clear:both;
-  height: 3%;
+  clear: both;
+}
+
+hr.dark-line {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border-top: solid 0.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-color: #2c3e50
 }
 
 .parallax {
   background: url("../img/scene1.jpg") repeat 100%;
   opacity: 0.8;
-  height: 100%;
+  max-height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 17%;
+  width: 100% auto;
+  ;
 }
+
 .parallax2 {
   background: url("../img/scene2.jpg") repeat 100%;
   opacity: 0.8;
-  height: 100%;
+  max-height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,32 +190,125 @@ nav a:hover {
   padding-top: 17%;
 }
 
-#contact{
-	background:#eaeaea;
-	color:#f4f4f4;
-	padding-bottom:80px;
+.row h4 {
+  color: #fff;
+  font-weight: 600;
 }
 
-textarea.form-control{
-    height:100px;
+u li {
+  color: #fff;
+}
+
+.container ul {
+  font-size: : 30px;
+}
+
+#services {
+  background-color: #35b2fc;
+  max-height: 100%;
+}
+
+#about {
+  background: #f8f9fa;
+  height: 100%;
+  max-height: 70%;
+}
+
+#price {
+  background: #35b2fc;
+  min-height: 60%;
+}
+
+#demo {
+  background: #b5b5b5;
+  padding: 1% 0;
+}
+
+#demo h2 {
+  color: #fff;
+}
+
+#faq {
+  top: 50%;
+  background-color: #35b2fc;
+}
+
+#contact {
+  background: #b5b5b5;
+  color: #fff;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.acc-container {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.acc-btn {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 25px;
+  cursor: pointer;
+  background: #34495E;
+  border-bottom: 1px solid #2C3E50;
+}
+
+.acc-content {
+  height: 0px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #2C3E50;
+}
+
+.acc-content-inner {
+  padding: 30px;
+}
+
+.open {
+  height: auto;
+}
+
+.acc-btn h1 {
+  font: 700 20px/26px 'Lato', sans-serif;
+  color: #ffffff;
+}
+
+.acc-content-inner p {
+  font: 400 16px/24px 'Lato', sans-serif;
+  color: #798795;
+}
+
+.selected {
+  color: #1ABC9C;
+}
+
+textarea.form-control {
+  height: 100px;
 }
 
 .contact-form {
-text-align: center;
+  text-align: center;
 }
 
 #services {
   text-align: center;
- left: : 50%;
- right: 50%;
- align-content: center;
+  left: : 50%;
+  right: 50%;
+  align-content: center;
 }
 
 #main-wrapper {
-    margin: 0 auto;
-    width: 70%;
-    clear: both;
-  }
+  margin: 0 auto;
+  width: 70%;
+  clear: both;
+}
 
 footer {
   clear: both;
@@ -203,16 +326,18 @@ footer {
   margin 5%;
 }
 
+.p-5 p {
+  color: #212529;
+}
+
 @media screen and (max-width: 768px) {
   #menu-icon {
     margin: 26px 0 0 26px;
   }
-
   #main-wrapper {
     width: 90%;
     font-size: 95%;
-    }
-
+  }
   nav ul, nav:active ul {
     padding: 8px 0;
     left: 23px;
@@ -220,45 +345,19 @@ footer {
     width: 100%;
     text-align: center;
   }
-
   .content h1 {
     font-size: 180%;
   }
-
   p {
     font-size: 120%;
   }
-
+  p ul li {
+    color: #FFF;
+  }
   h2 {
     font-size: 160%;
   }
-
-  .left-col {
-    width: 96%;
-    padding: 0 2%;
-    margin: 0 0 3% 0;
-  }
-  .sidebar {
-    width: 96%;
-    margin: 0 auto;
-  }
-
-.sidebar img{
-  height: auto;
-}
-
-  img {
-    padding: 2%;
-  }
-
-  .one-third-portfolio {
-    width: 96%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
   .parallax {
-  display: none;
+    display: none;
   }
-
 }
