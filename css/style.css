@@ -202,11 +202,14 @@ u li {
 
 #services {
   background-color: #35b2fc;
-  padding: 3% 0;
+  padding-top: 1%;
+  padding-bottom: 5%;
 }
 
 #about {
   background: #f8f9fa;
+  padding-top: 3%;
+  padding-bottom: 5%;
 }
 
 #price {
@@ -216,17 +219,17 @@ u li {
 
 #demo {
   background: #fff;
-  padding: 1% 0;
+
 }
 
 #faq {
   background-color: #35b2fc;
-    padding: 3% 0;
+    padding: 4.5% 0;
 }
 
 #contact {
-  background: #b5b5b5;
-  color: #fff;
+  background: #fff;
+  color: #212529;
   padding-bottom: 80px;
   text-align: center;
 }
