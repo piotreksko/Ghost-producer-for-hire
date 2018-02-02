@@ -1,3 +1,40 @@
+<!--<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$human = intval($_POST['human']);
+		$from = 'Demo Contact Form';
+		$to = 'pietrek.s@o2.pl';
+		$subject = 'Message from Contact Demo ';
+
+		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+	}
+}
+	}
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +45,6 @@
   <title>EDM Producer for hire</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
@@ -74,25 +110,25 @@
           </span>
           <h3 class="service-heading">Ghost Production</h3>
           <hr class="dark-line">
-          <p>Theres no better way to boost your DJ career than blasting your own tracks during sets .I produce original tracks from scratch and create catchy remixex that are ready to release. I can even collaborate if you provide me your stems and midi
+          <p>Theres no better way to boost your DJ career than blasting your own tracks during sets .I produce original tracks from scratch and create catchy remixes that are ready for release. I can even collaborate if you provide me your stems and midi
             files!
           </p>
         </div>
         <div class="col-md-6">
           <span class="fa-stack fa-4x">
-    <img class="sr-icons" src="img/remix.png" alt="Remix" class="higher">
+    <img class="sr-icons" src="img/remix.png" alt="Remix">
           </span>
           <h3 class="service-heading">Mixing & Mastering</h3>
           <hr class="dark-line">
           <p>
-            If you have a ready track that you can't get to sound right, just send the stems and let me do the work. Clients satisfaction is the most important aspect for me - if you are not satisfied with the result you will not have to pay me at all.
+            If you have a ready track that you can't get to sound right, just send the stems and let me do the work. Client's satisfaction is the most important aspect for me - if you are not satisfied with the result you will not have to pay me at all.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <span class="fa-stack fa-4x">
-    <img class="sr-icons" src="img/process.png" alt="Mixer" class="higher">
+    <img class="sr-icons" src="img/process.png" alt="Mixer">
           </span>
           <h3 class="service-heading">How does it work?</h3>
           <hr class="dark-line">
@@ -118,7 +154,7 @@
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2>ABOUT</h2>
+            <h2>ABOUT ME</h2>
             <hr class="dark-line">
             <p style="text-indent: 8%">I am a passionate electronic music producer. I am determined to produce fresh sounding tracks that will suit your needs, which I have proven to do based on satisfying opinions of my clients in the past. My style fits into 120-130bpm category.</p>
             <br>
@@ -153,22 +189,22 @@
           <span class="fa-stack fa-4x">
             <img class="sr-icons2" src="img/ghost.png" alt="Ghost">
           </span>
-          <h3 class="service-heading">Custom EDM track</h4>
-          <p class="text-muted"><ul><li>FREE DEMO</li><li>Created from scratch</li><li>Mixed & mastered</li><li>Multitrack stems & MIDI files</li><li>Minimal length 3:30min</li><li>Original Mix & Radio Edit</li><h1>200-350$</h1></p>
+          <h3 class="service-heading">Custom EDM track</h3>
+          <ul><li>FREE DEMO</li><li>Created from scratch</li><li>Mixed & mastered</li><li>Multitrack stems & MIDI files</li><li>Minimal length 3:30min</li><li>Original Mix & Radio Edit</li></ul><h1>200-350$</h1>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-    <img class="sr-icons2" src="img/remix.png" alt="Remix" class="higher">
+    <img class="sr-icons2" src="img/remix.png" alt="Remix">
           </span>
-          <h3 class="service-heading">Remix / Bootleg</h4>
-          <p class="text-muted"><ul><li>FREE DEMO</li><li>Mixed & mastered</li><li>Multitrack stems & MIDI files</li><li>Minimal length 3:30min</li><li>Original Mix & Radio Edit</li><br><h1>200-350$</h1></p>
+          <h3 class="service-heading">Remix / Bootleg</h3>
+          <ul><li>FREE DEMO</li><li>Mixed & mastered</li><li>Multitrack stems & MIDI files</li><li>Minimal length 3:30min</li><li>Original Mix & Radio Edit</li></ul><br><h1>200-350$</h1>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-    <img class="sr-icons2" src="img/mixer.png" alt="Mixer" class="higher">
+    <img class="sr-icons2" src="img/mixer.png" alt="Mixer">
           </span>
-          <h3 class="service-heading">Mixing & Mastering</h4>
-          <p class="text-muted"><ul><li>Done in an acoustically treated studio</li><li>High quality plugins</li><li>Original Mix & Radio Edit</li><br><br><br><h1>70$</h1></p>
+          <h3 class="service-heading">Mixing & Mastering</h3>
+          <ul><li>Done in an acoustically treated studio</li><li>High quality plugins</li><li>Original Mix & Radio Edit</li></ul><br><br><br><h1>70$</h1>
         </div>
       </div>
     </div>
