@@ -32,11 +32,14 @@ h2 {
   text-decoration: none;
 }
 
-h3 {
+h3, h4{
   color: #fff;
   padding-top: 4%;
 }
 
+h4 img {
+  max-width: 80px;
+}
 p {
   font-family: 'Source Sans Pro', sans-serif;
   color: #FFF;
@@ -122,7 +125,7 @@ nav a:hover {
   padding: 10px;
 }
 
-/*-- Intro --*/
+/*-- Other --*/
 #about h2, .contact h2, #demo h2 {
   color: #2c2c2c;
 }
@@ -147,7 +150,7 @@ nav a:hover {
 hr.dark-line {
   max-width: 15rem;
   padding: 0;
-  text-align: center;
+
   border-top: solid 0.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -156,7 +159,6 @@ hr.dark-line {
 
 .parallax {
   background: url("../img/scene1.jpg") repeat 100%;
-  opacity: 0.8;
   max-height: 50%;
   background-attachment: fixed;
   background-position: center;
@@ -168,13 +170,13 @@ hr.dark-line {
 
 .parallax2 {
   background: url("../img/scene2.jpg") repeat 100%;
-  opacity: 0.8;
   max-height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 17%;
+  width: 100% auto;
 }
 
 #services {

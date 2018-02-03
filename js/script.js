@@ -32,18 +32,18 @@ $(document).ready(function() {
 
   window.sr = ScrollReveal();
   sr.reveal('.sr-icons', {
-    duration: 1200,
+    duration: 1100,
     scale: 0.3,
     distance: '100px'
   }, 400);
   sr.reveal('.sr-icons2', {
-    duration: 1200,
+    duration: 1100,
     scale: 0.3,
     distance: '-100px'
   }, 400);
   sr.reveal('.sr-sub', {
-    duration: 2000,
+    duration: 1800,
     scale: 0.3,
     distance: '-100px'
-  }, 800);
+  }, 600);
 });
