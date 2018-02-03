@@ -212,7 +212,7 @@ hr.dark-line {
 /*-- FAQ --*/
 
 .acc-container {
-  width: 60%;
+  width: 70%;
   margin: 30px auto 0 auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -312,8 +312,17 @@ footer {
   .parallax .parallax2{
     display: none;
   }
-}
 
+  .p-5 img {
+    display: none
+  }
+
+  .p-5 {
+    padding: 5%;
+  }
+
+  .acc-container {
+    width: 95%;
 /** Starting **/
 
 
