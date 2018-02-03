@@ -31,6 +31,7 @@ $(document).ready(function() {
 
 
   window.sr = ScrollReveal();
+  if(window.innerWidth > 568){
   sr.reveal('.sr-icons', {
     duration: 1100,
     scale: 0.3,
@@ -45,5 +46,5 @@ $(document).ready(function() {
     duration: 1800,
     scale: 0.3,
     distance: '-100px'
-  }, 600);
+  }, 600);}
 });
